@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Share2, Heart } from "lucide-react";
 
 
+
 const Hero = ({products , setProducts}) => {
   
 

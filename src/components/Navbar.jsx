@@ -1,4 +1,5 @@
 import React ,{useState} from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = ({products ,setProducts}) => {
 
@@ -24,8 +25,8 @@ const Navbar = ({products ,setProducts}) => {
         </div>
 
         <ul className='flex gap-5 font-bold text-xl'>
-            <li>Home</li>
-            <li>Cart</li>
+            <Link to="/">Home</Link>
+            <Link to="/cart">Cart</Link>
         </ul>
     </div>
 
