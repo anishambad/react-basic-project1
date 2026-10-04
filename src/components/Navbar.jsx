@@ -1,7 +1,10 @@
-import React ,{useState} from 'react'
+import React ,{useState , useContext} from 'react'
 import { Link } from 'react-router-dom'
+import ProductContext from '../context/ProductContext'
 
-const Navbar = ({products ,setProducts}) => {
+const Navbar = () => {
+
+  const {products ,setProducts} = useContext(ProductContext)
 
   const[searchValue , setSearchValue] = useState("")
 
